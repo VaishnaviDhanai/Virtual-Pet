@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Pet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.jpeg" type="image/x-icon">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="container">
+        <h1>Virtual Pet</h1>
+
+        <div class="pet-container">
+            <div class="pet" id="pet">
+                <div class="pet-head">
+                    <div class="eyes">
+                        <div class="eye left"></div>
+                        <div class="eye right"></div>
+                    </div>
+                    <div class="mouth" id="pet-mouth"></div>
+                    <div class="blush left"></div>
+                    <div class="blush right"></div>
+                    <div class="tears hidden" id="tears">
+                        <div class="tear left"></div>
+                        <div class="tear right"></div>
+                    </div>
+                    <div class="love-text" id="love-text">I love it!</div>
+                </div>
+                <div class="pet-body">
+                    <div class="paw left"></div>
+                    <div class="paw right"></div>
+                </div>
+                <div class="ears">
+                    <div class="ear left"></div>
+                    <div class="ear right"></div>
+                </div>
+                <div class="pet-shadow"></div>
+            </div>
+            
+            <!-- Game objects positioned inside pet container for better relative positioning -->
+            <div id="food-item" class="food-item hidden"></div>
+            <div id="soap-bubbles" class="soap-bubbles hidden"></div>
+            <div id="ball" class="ball hidden"></div>
+            <div id="water-drops" class="water-drops hidden"></div>
+            <div id="sponge" class="sponge hidden"></div>
+        </div>
+
+        <div class="status-bars">
+            <div class="bar">
+                <div class="bar-label">
+                    <span>Hunger</span>
+                    <span id="hunger-value">100</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar-fill hunger-fill" id="hunger-bar"></div>
+                </div>
+            </div>
+
+            <div class="bar">
+                <div class="bar-label">
+                    <span>Cleanliness</span>
+                    <span id="cleanliness-value">100</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar-fill cleanliness-fill" id="cleanliness-bar"></div>
+                </div>
+            </div>
+
+            <div class="bar">
+                <div class="bar-label">
+                    <span>Happiness</span>
+                    <span id="happiness-value">100</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar-fill happiness-fill" id="happiness-bar"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button class="feed-btn" id="feed-btn">
+                <span class="btn-icon">🍔</span>
+                <span>Feed</span>
+            </button>
+
+            <button class="clean-btn" id="clean-btn">
+                <span class="btn-icon">🧼</span>
+                <span>Clean</span>
+            </button>
+
+            <button class="play-btn" id="play-btn">
+                <span class="btn-icon">🎾</span>
+                <span>Play</span>
+            </button>
+        </div>
+
+        <div class="status-message" id="status-message">Your pet is happy!</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
